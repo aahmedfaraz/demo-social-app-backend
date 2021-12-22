@@ -10,6 +10,10 @@ const router = express.Router();
 // @desc Read all posts of particular user
 // @access Private
 
+router.get('/', (req, res) => {
+    res.status(200).json({ msg : 'Inside Posts' })
+})
+
 // @route POST /api/posts
 // @desc Add a new post
 // @access Private

@@ -14,13 +14,7 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => {
     res.status(200).json({
         name: 'Ahmed Faraz',
-        skills: [
-            'Full Stack Development',
-            'Cloud Architect',
-            'Blockchain',
-            'Artificial Intelligence',
-            'Metaverse'
-        ],
+        skills: 'Cloud Architect',
     });
 });
 
