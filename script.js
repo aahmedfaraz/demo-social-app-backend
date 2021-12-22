@@ -11,7 +11,7 @@ app.use(express.json({ extended: false }));
 // @route GET /api
 // @desc Get the initial response from the Server
 // @access Public
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).json({
         name: 'Ahmed Faraz',
         skills: [
